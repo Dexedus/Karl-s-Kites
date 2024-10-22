@@ -1,0 +1,234 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+    color: rgb(93, 127, 143);
+    background: linear-gradient(0deg, rgb(72, 125, 150) , rgb(224, 235, 240), rgb(255, 255, 255));
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    background-color: rgb(52, 84, 114);
+    height: 50px;
+    color: white;
+}
+
+#About{
+    background-color: rgba(235, 242, 245, 0);
+    border-radius: 15%;
+    margin-bottom: 150px;
+}
+
+.about-text{
+    width: 30%;
+    font-size: larger;
+}
+
+.icon-title{
+    color: rgb(62, 88, 104);
+}
+
+#title-box, #nav-bar{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+h1{
+    margin-left: 20px;
+}
+
+.nav-link{
+    margin-inline: 20px;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+#header-img{
+    height: 50px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    margin-top: 40px;
+    color: rgb(58, 58, 58);
+}
+
+#FormText{
+    font-size: larger
+}
+
+.flex-container{
+    display: flex;
+    margin-block: 50px;
+    height: 200px;
+    align-items: center;
+    width: 600px;
+    justify-content: space-around;
+}
+
+svg{
+    height: 70px;
+    width: 70px;
+    color: rgb(59, 82, 85);
+}
+
+
+
+
+.video{
+    text-align: center;
+    color: rgb(51, 51, 51);
+    margin-bottom: 150px;
+}
+
+
+#CardContainer{
+    display: flex;
+    width: 900px;
+    justify-content: space-between;
+}
+
+.card{
+    text-align: center;
+    color: rgb(70, 77, 94);
+    height: 350px;
+    width: 30%;
+    border: solid rgb(52, 86, 114);
+    background-color: rgba(101, 113, 129, 0.315);
+}
+h4{
+    background-color: rgba(255, 255, 255, 0.877);
+    margin: 0;
+    padding-block: 20px;
+}
+
+#medium{
+    background-color: rgba(124, 124, 124, 0.575);
+}
+
+#big{
+    background-color: rgba(0, 0, 0, 0.856);
+    color: white;
+}
+
+.price{
+    background-color: rgba(241, 241, 241, 0.171);
+    margin: 0;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.perks{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+}
+
+
+
+footer{
+    background-color: rgb(36, 36, 49);
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+
+#quoteone{
+    z-index: -1;
+    position: fixed;
+    left: 80%;
+    top: 30%;
+    width: 150px;
+}
+
+#quotetwo{
+    z-index: -1;
+    position: fixed;
+    left: 7%;
+    top: 50%;
+    width: 150px;
+}
+
+#quotethree{
+    z-index: -1;
+    position: fixed;
+    left: 80%;
+    top: 90%;
+    width: 150px;
+}
+
+
+
+@media (max-width: 900px){
+
+#quoteone, #quotetwo, #quotethree{
+  display: none;
+}
+
+#CardContainer{
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+}
+
+.card{
+    width: 270px;
+    margin-block: 30px;
+}
+
+}
+
+@media (max-width: 600px){
+
+h1{
+    font-size: 20px;
+}
+
+.nav-link{
+    font-size: small;
+}
+
+.flex-container{
+    width: 300px;
+}
+
+#video{
+    width: 80vw!important;
+    height: 100!important;
+}
+    
+
+}
+
+@media (max-width: 350px){
+
+#FormText{
+    font-size: small;
+}
+
+.nav-link{
+    margin-inline: 3px;
+}
+}
